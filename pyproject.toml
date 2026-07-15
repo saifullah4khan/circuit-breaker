@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circuit-breaker-lite"
+version = "0.1.0"
+description = "A small, dependency-free, thread-safe circuit breaker for Python."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Saifullah Khan", email = "saifullah4khan@gmail.com" }]
+keywords = ["circuit-breaker", "reliability", "resilience", "fault-tolerance", "retry"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/saifullah4khan/circuit-breaker"
+Repository = "https://github.com/saifullah4khan/circuit-breaker"
+
+[tool.setuptools]
+packages = ["circuit_breaker"]
